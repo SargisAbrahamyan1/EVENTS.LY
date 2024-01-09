@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="data-aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <a href="index.html">
+                    <img class="logo" src="images/site-logo.svg" alt="">
+                    <img class="logo-black" src="images/logo-black.svg" alt="">
+                </a>
+                <div class="navigation-elements-intro">
+                    <nav class="navigation">
+                        <ul class="menu-cont">
+                            <li class="menu-list">
+                                <a class="menu-link invert" href="#about">About</a>
+                            </li>
+                            <li class="menu-list">
+                                <a class="menu-link invert" href="#details">Details</a>
+                            </li>
+                            <li class="menu-list">
+                                <a class="menu-link invert" href="#benefits">Benefits</a>
+                            </li>
+                            <li class="menu-list">
+                                <a class="menu-link invert" href="#ticketing">Ticketing 3.0</a>
+                            </li>
+                            <li class="menu-list">
+                                <a class="menu-link invert" href="#roadmap">Roadmap</a>
+                            </li>
+                            <li class="menu-list">
+                                <a class="menu-link invert" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="site-style-cont">
+                        <button class="site-style-btn invert" onclick="backgroundBtn()"></button>
+                        <a class="launch-app" href="">Launch App</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="cover" data-aos="fade-left">
+            <div class="title-container">
+                <h1 class="title invert">Revolutionising Web3 Ticketing for events</h1>
+            </div>
+            <div class="cover-slide-container">
+                <div class="left-intro">
+                    <div class="mobile-links">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path
+                                    d="M16.1937 2.58569H18.969L12.9056 9.70582L20.0392 19.3928H14.4539L10.0797 13.5169L5.07358 19.3928H2.29675L8.78255 11.7768L1.93928 2.58647H7.66639L11.6205 7.95717L16.1937 2.58569ZM15.2201 17.6867H16.7578L6.83078 4.20264H5.18067L15.2201 17.6867Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"
+                                fill="none">
+                                <path
+                                    d="M20.3511 2.80924L2.76149 9.67751C2.63742 9.72658 2.5317 9.81307 2.45904 9.92498C2.38638 10.0369 2.35038 10.1687 2.35605 10.302C2.36171 10.4353 2.40876 10.5635 2.49065 10.6688C2.57254 10.7742 2.68521 10.8514 2.81301 10.8898L6.13038 11.8582C6.48542 11.9628 6.80927 12.1532 7.07337 12.4125C7.33748 12.6718 7.53373 12.9921 7.64484 13.3452L8.95324 17.4936C8.99271 17.6204 9.06449 17.7348 9.16153 17.8255C9.25856 17.9162 9.37753 17.9801 9.50673 18.011C9.63593 18.0418 9.77093 18.0385 9.89847 18.0014C10.026 17.9642 10.1417 17.8946 10.2342 17.7992L12.0337 15.962C12.1756 15.8164 12.3655 15.7272 12.5681 15.7108C12.7708 15.6943 12.9725 15.7519 13.136 15.8727L17.0818 18.7677C17.2094 18.8596 17.3578 18.9183 17.5137 18.9386C17.6695 18.9589 17.828 18.9401 17.9748 18.8839C18.1217 18.8277 18.2522 18.7358 18.3547 18.6166C18.4572 18.4974 18.5284 18.3546 18.562 18.201L21.5634 3.84291C21.5983 3.68312 21.5892 3.51684 21.537 3.36183C21.4848 3.20681 21.3915 3.06888 21.2671 2.96275C21.1426 2.85662 20.9917 2.78629 20.8303 2.75925C20.669 2.73221 20.5034 2.74949 20.3511 2.80924ZM18.1636 5.89996L12.2294 11.1576C11.8929 11.449 11.6773 11.8557 11.625 12.2978C11.6131 12.3896 11.5703 12.4746 11.5037 12.539C11.4371 12.6033 11.3507 12.6431 11.2585 12.6519C11.1663 12.6607 11.0739 12.6379 10.9963 12.5873C10.9188 12.5367 10.8608 12.4612 10.8317 12.3733L10.5604 11.5045C10.4662 11.1995 10.4757 10.872 10.5876 10.5731C10.6995 10.2742 10.9073 10.0208 11.1786 9.85265L17.9644 5.64927C17.9992 5.63415 18.0382 5.63151 18.0748 5.64182C18.1113 5.65212 18.1432 5.67473 18.165 5.70583C18.1868 5.73692 18.1972 5.77459 18.1945 5.81246C18.1917 5.85034 18.1759 5.8861 18.1499 5.9137L18.1636 5.89996Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <h3 class="title-intro invert">Revolutionising Web3 Ticketing for events</h3>
+                    <p class="subtitle-intro subtitle-intro-top">Smart ticketing app for seamless Primary & Secondary
+                        sales, transfers, entry &  rewarding your community. 100% secure & private. Available to use
+                        soon!</p>
+                    <a class="launch-app-link" href="">Launch App</a>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-bg-1">
+                                    <div class="calendar-cont invert">
+                                        <p class="date">01.02.2024</p>
+                                        <img class="el-img" src="images/ion_calendar-sharp.webp" alt="">
+                                    </div>
+                                    <h6 class="calendar-content invert">John Styles</h6>
+                                    <p class="calendar-description invert">820 Tickets Avaible</p>
+                                    <div class="line"></div>
+                                    <a class="calendar-link invert" href="">Buy Ticket Now!
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M11.7331 4.83611C11.9279 4.64997 12.1922 4.54541 12.4677 4.54541C12.7432 4.54541 13.0074 4.64997 13.2022 4.83611L17.8776 9.304C18.0724 9.49019 18.1818 9.74268 18.1818 10.006C18.1818 10.2692 18.0724 10.5217 17.8776 10.7079L13.2022 15.1758C13.0063 15.3567 12.7438 15.4567 12.4714 15.4545C12.199 15.4522 11.9384 15.3478 11.7458 15.1637C11.5531 14.9796 11.4439 14.7306 11.4415 14.4703C11.4391 14.2099 11.5438 13.9591 11.7331 13.7719L14.5456 10.9988H2.85715C2.5816 10.9988 2.31733 10.8942 2.12249 10.708C1.92764 10.5218 1.81818 10.2693 1.81818 10.006C1.81818 9.74263 1.92764 9.49009 2.12249 9.30389C2.31733 9.11769 2.5816 9.01309 2.85715 9.01309H14.5456L11.7331 6.24002C11.5383 6.05383 11.4289 5.80133 11.4289 5.53806C11.4289 5.27479 11.5383 5.0223 11.7331 4.83611Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-bg-1">
+                                    <div class="calendar-cont invert">
+                                        <p class="date">01.02.2024</p>
+                                        <img class="el-img" src="images/ion_calendar-sharp.webp" alt="">
+                                    </div>
+                                    <h6 class="calendar-content invert">John Styles</h6>
+                                    <p class="calendar-description invert">820 Tickets Avaible</p>
+                                    <div class="line"></div>
+                                    <a class="calendar-link invert" href="">Buy Ticket Now!
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M11.7331 4.83611C11.9279 4.64997 12.1922 4.54541 12.4677 4.54541C12.7432 4.54541 13.0074 4.64997 13.2022 4.83611L17.8776 9.304C18.0724 9.49019 18.1818 9.74268 18.1818 10.006C18.1818 10.2692 18.0724 10.5217 17.8776 10.7079L13.2022 15.1758C13.0063 15.3567 12.7438 15.4567 12.4714 15.4545C12.199 15.4522 11.9384 15.3478 11.7458 15.1637C11.5531 14.9796 11.4439 14.7306 11.4415 14.4703C11.4391 14.2099 11.5438 13.9591 11.7331 13.7719L14.5456 10.9988H2.85715C2.5816 10.9988 2.31733 10.8942 2.12249 10.708C1.92764 10.5218 1.81818 10.2693 1.81818 10.006C1.81818 9.74263 1.92764 9.49009 2.12249 9.30389C2.31733 9.11769 2.5816 9.01309 2.85715 9.01309H14.5456L11.7331 6.24002C11.5383 6.05383 11.4289 5.80133 11.4289 5.53806C11.4289 5.27479 11.5383 5.0223 11.7331 4.83611Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-bg-1">
+                                    <div class="calendar-cont invert">
+                                        <p class="date">01.02.2024</p>
+                                        <img class="el-img" src="images/ion_calendar-sharp.webp" alt="">
+                                    </div>
+                                    <h6 class="calendar-content invert">John Styles</h6>
+                                    <p class="calendar-description invert">820 Tickets Avaible</p>
+                                    <div class="line"></div>
+                                    <a class="calendar-link invert" href="">Buy Ticket Now!
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M11.7331 4.83611C11.9279 4.64997 12.1922 4.54541 12.4677 4.54541C12.7432 4.54541 13.0074 4.64997 13.2022 4.83611L17.8776 9.304C18.0724 9.49019 18.1818 9.74268 18.1818 10.006C18.1818 10.2692 18.0724 10.5217 17.8776 10.7079L13.2022 15.1758C13.0063 15.3567 12.7438 15.4567 12.4714 15.4545C12.199 15.4522 11.9384 15.3478 11.7458 15.1637C11.5531 14.9796 11.4439 14.7306 11.4415 14.4703C11.4391 14.2099 11.5438 13.9591 11.7331 13.7719L14.5456 10.9988H2.85715C2.5816 10.9988 2.31733 10.8942 2.12249 10.708C1.92764 10.5218 1.81818 10.2693 1.81818 10.006C1.81818 9.74263 1.92764 9.49009 2.12249 9.30389C2.31733 9.11769 2.5816 9.01309 2.85715 9.01309H14.5456L11.7331 6.24002C11.5383 6.05383 11.4289 5.80133 11.4289 5.53806C11.4289 5.27479 11.5383 5.0223 11.7331 4.83611Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-bg-1">
+                                    <div class="calendar-cont invert">
+                                        <p class="date">01.02.2024</p>
+                                        <img class="el-img" src="images/ion_calendar-sharp.webp" alt="">
+                                    </div>
+                                    <h6 class="calendar-content invert">John Styles</h6>
+                                    <p class="calendar-description invert">820 Tickets Avaible</p>
+                                    <div class="line"></div>
+                                    <a class="calendar-link invert" href="">Buy Ticket Now!
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M11.7331 4.83611C11.9279 4.64997 12.1922 4.54541 12.4677 4.54541C12.7432 4.54541 13.0074 4.64997 13.2022 4.83611L17.8776 9.304C18.0724 9.49019 18.1818 9.74268 18.1818 10.006C18.1818 10.2692 18.0724 10.5217 17.8776 10.7079L13.2022 15.1758C13.0063 15.3567 12.7438 15.4567 12.4714 15.4545C12.199 15.4522 11.9384 15.3478 11.7458 15.1637C11.5531 14.9796 11.4439 14.7306 11.4415 14.4703C11.4391 14.2099 11.5438 13.9591 11.7331 13.7719L14.5456 10.9988H2.85715C2.5816 10.9988 2.31733 10.8942 2.12249 10.708C1.92764 10.5218 1.81818 10.2693 1.81818 10.006C1.81818 9.74263 1.92764 9.49009 2.12249 9.30389C2.31733 9.11769 2.5816 9.01309 2.85715 9.01309H14.5456L11.7331 6.24002C11.5383 6.05383 11.4289 5.80133 11.4289 5.53806C11.4289 5.27479 11.5383 5.0223 11.7331 4.83611Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-bg-1">
+                                    <div class="calendar-cont invert">
+                                        <p class="date">01.02.2024</p>
+                                        <img class="el-img" src="images/ion_calendar-sharp.webp" alt="">
+                                    </div>
+                                    <h6 class="calendar-content invert">John Styles</h6>
+                                    <p class="calendar-description invert">820 Tickets Avaible</p>
+                                    <div class="line"></div>
+                                    <a class="calendar-link invert" href="">Buy Ticket Now!
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M11.7331 4.83611C11.9279 4.64997 12.1922 4.54541 12.4677 4.54541C12.7432 4.54541 13.0074 4.64997 13.2022 4.83611L17.8776 9.304C18.0724 9.49019 18.1818 9.74268 18.1818 10.006C18.1818 10.2692 18.0724 10.5217 17.8776 10.7079L13.2022 15.1758C13.0063 15.3567 12.7438 15.4567 12.4714 15.4545C12.199 15.4522 11.9384 15.3478 11.7458 15.1637C11.5531 14.9796 11.4439 14.7306 11.4415 14.4703C11.4391 14.2099 11.5438 13.9591 11.7331 13.7719L14.5456 10.9988H2.85715C2.5816 10.9988 2.31733 10.8942 2.12249 10.708C1.92764 10.5218 1.81818 10.2693 1.81818 10.006C1.81818 9.74263 1.92764 9.49009 2.12249 9.30389C2.31733 9.11769 2.5816 9.01309 2.85715 9.01309H14.5456L11.7331 6.24002C11.5383 6.05383 11.4289 5.80133 11.4289 5.53806C11.4289 5.27479 11.5383 5.0223 11.7331 4.83611Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logos-info-cont" data-aos="fade-right" id="about">
+            <div class="logo-slider" data-v-4ef8651c="">
+                <div class="logos-slide invert" data-v-4ef8651c="">
+                    <img src="images/logo-slide-1.webp" data-v-4ef8651c="">
+                    <img src="images/logo-slide-2.webp" data-v-4ef8651c="">
+                    <img src="images/logo-slide-3.webp" data-v-4ef8651c="">
+                    <img src="images/logo-slide-4.webp" data-v-4ef8651c="">
+                    <img src="images/logo-slide-5.webp" data-v-4ef8651c="">
+                    <img src="images/logo-slide-6.webp" data-v-4ef8651c="">
+                    <img src="images/logo-slide-7.webp" data-v-4ef8651c="">
+                </div>
+            </div>
+            <div class="center-element">
+                <div class="el-div">
+                    <div class="flex-div">
+                        <img class="block-image" src="images/block-img.webp" alt="">
+                        <div class="grid-cont">
+                            <div class="grid-title-subtitle-cont">
+                                <p class="title-clip invert">Want to host an Event?</p>
+                                <p class="grid-el-subtitle subtitle-intro invert">Contact us to submit your event
+                                    details and
+                                    we may sponsor
+                                    it too.</p>
+                            </div>
+                            <div class="icon-text-cont">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path
+                                        d="M8.24994 2.74996V0.916626H13.7499V2.74996H8.24994ZM9.16661 13.5208L8.15828 11.5041C8.08189 11.3361 7.9673 11.2099 7.81453 11.1255C7.66175 11.0412 7.50133 10.9993 7.33328 11H2.79578C3.02494 8.93746 3.91869 7.19946 5.47703 5.78596C7.03536 4.37246 8.87633 3.66601 10.9999 3.66663C11.9472 3.66663 12.8562 3.8194 13.727 4.12496C14.5979 4.43052 15.4152 4.87357 16.1791 5.45413L17.4624 4.17079L18.7458 5.45413L17.4624 6.73746C17.9513 7.37913 18.3409 8.05532 18.6312 8.76604C18.9215 9.47676 19.1124 10.2214 19.2041 11H15.2395L13.6583 7.83746C13.4902 7.48607 13.2152 7.31038 12.8333 7.31038C12.4513 7.31038 12.1763 7.48607 12.0083 7.83746L9.16661 13.5208ZM10.9999 20.1666C8.87633 20.1666 7.03536 19.4599 5.47703 18.0464C3.91869 16.6329 3.02494 14.8952 2.79578 12.8333H6.76036L8.34161 15.9958C8.50967 16.3472 8.78467 16.5229 9.16661 16.5229C9.54855 16.5229 9.82355 16.3472 9.99161 15.9958L12.8333 10.3125L13.8416 12.3291C13.918 12.4972 14.0326 12.6234 14.1854 12.7077C14.3381 12.792 14.4986 12.8339 14.6666 12.8333H19.2041C18.9749 14.8958 18.0812 16.6335 16.5229 18.0464C14.9645 19.4593 13.1236 20.166 10.9999 20.1666Z"
+                                        fill="url(#paint0_linear_1_578)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1_578" x1="19.9562" y1="4.85413" x2="4.4579"
+                                            y2="4.93424" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#9104FF" />
+                                            <stop offset="1" stop-color="#FF5CEF" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p class="icon-text-clip">Limited Offer</p>
+                            </div>
+                            <img class="img-iconcover-slide-container invert" src="images/Union-white.webp" alt="">
+                            <a class="learn-more invert" href="">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path
+                                        d="M12.9064 5.31977C13.1207 5.11502 13.4114 5 13.7144 5C14.0175 5 14.3081 5.11502 14.5224 5.31977L19.6654 10.2344C19.8796 10.4393 20 10.717 20 11.0066C20 11.2962 19.8796 11.5739 19.6654 11.7787L14.5224 16.6934C14.3069 16.8924 14.0182 17.0024 13.7185 17C13.4189 16.9975 13.1322 16.8826 12.9203 16.6801C12.7084 16.4776 12.5883 16.2037 12.5856 15.9173C12.583 15.631 12.6982 15.3551 12.9064 15.1491L16.0002 12.0987H3.14287C2.83977 12.0987 2.54907 11.9837 2.33474 11.7789C2.12041 11.574 2 11.2963 2 11.0066C2 10.7169 2.12041 10.4391 2.33474 10.2343C2.54907 10.0295 2.83977 9.91444 3.14287 9.91444H16.0002L12.9064 6.86407C12.6922 6.65926 12.5718 6.38152 12.5718 6.09192C12.5718 5.80232 12.6922 5.52458 12.9064 5.31977Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title-right-cont" id="benefits">
+                <p class="this-subtitle invert">Some other details, but smaller</p>
+                <div class="right-title-el-cont">
+                    <h3 class="right-title invert">Everything you need for NFT Ticketing</h3>
+                </div>
+            </div>
+            <div class="left-img-right-list" data-aos="fade-left">
+                <img class="left-img" src="images/left-img.webp" alt="">
+                <ul class="right-ul-cont">
+                    <li class="right-list">
+                        <div class="list-title-subtitle-cont">
+                            <p class="title-intro invert">Primary & Secondary Sales</p>
+                            <p class="subtitle-intro">Seamlessly sell and resale in the app</p>
+                        </div>
+                    </li>
+                    <li class="right-list">
+                        <div class="list-title-subtitle-cont">
+                            <p class="title-intro invert">Smart Tickets</p>
+                            <p class="subtitle-intro">Unique QR code mechanism for entry that engages fans, limits
+                                fraud, and lets ticket issuers participate in resale revenues.</p>
+                        </div>
+                    </li>
+
+                    <li class="right-list">
+                        <div class="list-title-subtitle-cont">
+                            <p class="title-intro invert">Digital Communities</p>
+                            <p class="subtitle-intro">Tickets become tradable digital collectables (NFTs) with various
+                                awesome possibilities for fans & event organisers.</p>
+                        </div>
+                    </li>
+                    <li class="right-list">
+                        <div class="list-title-subtitle-cont">
+                            <p class="title-intro invert">Gated Access Media</p>
+                            <p class="subtitle-intro">Enabling access to exclusive content is limited to holders of
+                                specific NFTs</p>
+                        </div>
+                    </li>
+                    <li class="right-list">
+                        <div class="list-title-subtitle-cont">
+                            <p class="title-intro invert">Unrivalled Data</p>
+                            <p class="subtitle-intro">Clear, verifiable on-chain data on ticket ownership, vastly
+                                improving security & privacy.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="four-div-sec" data-aos="fade-left">
+            <div class="title-right-cont">
+                <p class="this-subtitle invert">Some other details, but smaller</p>
+                <div class="right-title-el-cont">
+                    <h3 class="right-title invert">There is untapped potential in every ticket</h3>
+                </div>
+            </div>
+            <div class="four-div-cont" id="details">
+                <div class="four-div-intro">
+                    <div class="four-el-div">
+                        <img class="four-el-img" src="images/Vector-1.webp" alt="">
+                        <p class="el-title invert">Optimised primary sales</p>
+                        <p class="el-subtitle">Fraud proof. Counterfeit proof.Verifiable on-chain data coupled with
+                            every sale. 100% Private & Secure.</p>
+                    </div>
+                    <div class="four-el-div">
+                        <img class="four-el-img" src="images/Vector-2.webp" alt="">
+                        <p class="el-title invert">Secondary market revenue share</p>
+                        <p class="el-subtitle">Fee split between event.ly & event organiser</p>
+                    </div>
+                    <div class="four-el-div">
+                        <img class="four-el-img" src="images/Vector-3.webp" alt="">
+                        <p class="el-title invert">Tickets become digital collectibles</p>
+                        <p class="el-subtitle">Engage your community post-event.</p>
+                    </div>
+                    <div class="four-el-div">
+                        <img class="four-el-img" src="images/Vector-4.webp" alt="">
+                        <p class="el-title invert">Reward your true fans</p>
+                        <p class="el-subtitle">Recognise long-term supporters. Reward your super fans. Know who are, and
+                            back you the most.</p>
+                    </div>
+                </div>
+                <div class="mobile-div"></div>
+            </div>
+        </section>
+        <section class="img-info" data-aos="fade-right">
+            <div class="container-title-img" id="ticketing">
+                <div class="title-inner">
+                    <div class="title-info-div">
+                        <h3 class="title-clip-text invert">Ticketing 3.0</h3>
+                    </div>
+                    <p class="this-subtitle invert">Some other details, but smaller</p>
+                </div>
+                <div class="image-container">
+                    <img class="img-large" src="images/img-info.webp" alt="">
+                    <img class="img-small" src="images/ilus-img-mobile.webp" alt="">
+                    <div class="left-top">
+                        <h6 class="img-info-content invert">Attend to Earn</h6>
+                        <ul class="img-info-text-cont">
+                            <li class="img-info-list">
+                                <div class="circle-style"></div>
+                                <p class="img-info-description">Fan Loyalty and Attendance</p>
+                            </li>
+                            <li class="img-info-list">
+                                <div class="circle-style"></div>
+                                <p class="img-info-description">Events ly enhances fan loyalty and attendance through
+                                    the
+                                    Attend-to-Earn model. This model incentivises event attendance by rewarding users
+                                    with
+                                    loyalty points and a ‘digital moment’ collectible.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-bottom">
+                        <h6 class="img-info-content invert">Collectable Content</h6>
+                        <ul class="img-info-text-cont">
+                            <li class="img-info-list">
+                                <div class="circle-style"></div>
+                                <p class="img-info-description">Coupled with tickets, such as art, music, and video,
+                                    allow fans
+                                    to enjoy or resell.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-top">
+                        <h6 class="img-info-content invert">Resale royalties</h6>
+                        <ul class="img-info-text-cont">
+                            <li class="img-info-list">
+                                <div class="circle-style"></div>
+                                <p class="img-info-description">Enable ticket issuers to receive a payment on every
+                                    resale.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-center">
+                        <h6 class="img-info-content invert">Blochain Ticketing</h6>
+                        <ul class="img-info-text-cont">
+                            <li class="img-info-list">
+                                <div class="circle-style"></div>
+                                <p class="img-info-description">Verifiable,On-chain Tickets that are 100% Secure &
+                                    Private while
+                                    also being completely fraud & counterfeit proof.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-bottom">
+                        <h6 class="img-info-content invert">Rotating QR codes</h6>
+                        <ul class="img-info-text-cont">
+                            <li class="img-info-list">
+                                <div class="circle-style"></div>
+                                <p class="img-info-description">Ensures that only redeemed tickets are validated, and
+                                    the ticket
+                                    holder is the one redeeming.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-line" data-aos="fade-up" id="roadmap">
+            <div class="left-right-cont">
+                <p class="this-subtitle invert">Some other details, but smaller</p>
+                <div class="right-title-inner">
+                    <h3 class="right-title invert">Roadmap</h3>
+                </div>
+            </div>
+            <div class="slider-inner">
+                <div class="left-right-inner">
+                    <div class="this-style-div">
+                        <div class="circle"></div>
+                        <div class="slide-bg-2 slide-before">
+                            <p class="slide-title">Q4 2023</p>
+                            <p class="slide-subtitile">Opening Act</p>
+                            <ul class="slide-content-ul">
+                                <li class="slide-list">Website V1 live</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="this-style-div">
+                        <div class="circle"></div>
+                        <div class="slide-bg-2 slide-before">
+                            <p class="slide-title">Q4 2023</p>
+                            <p class="slide-subtitile">Opening Act</p>
+                            <ul class="slide-content-ul">
+                                <li class="slide-list">Website V1 live</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="circle"></div>
+                                <div class="slide-bg-2">
+                                    <p class="slide-title">Q4 2023</p>
+                                    <p class="slide-subtitile invert">Opening Act</p>
+                                    <ul class="slide-content-ul">
+                                        <li class="slide-list">Website V1 live</li>
+                                        <li class="slide-list">Roadmap V1 live</li>
+                                        <li class="slide-list">MVP released</li>
+                                        <li class="slide-list">Pre-seed completed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="circle"></div>
+                                <div class="slide-bg-2">
+                                    <p class="slide-title">Q1 2024</p>
+                                    <p class="slide-subtitile invert">Act 1</p>
+                                    <ul class="slide-content-ul">
+                                        <li class="slide-list">Seed completed</li>
+                                        <li class="slide-list">Token audit </li>
+                                        <li class="slide-list">Co-sponsorship budget allocated</li>
+                                        <li class="slide-list">Alpha access for event organisers and attendees</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="circle"></div>
+                                <div class="slide-bg-2">
+                                    <p class="slide-title">Q2 2024</p>
+                                    <p class="slide-subtitile invert">Act 2</p>
+                                    <ul class="slide-content-ul">
+                                        <li class="slide-list">Events.ly London week</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-title-text-container" id="faq">
+                <div class="center-div">
+                    <h2 class="bottom-title invert">Start yournft ticketing journey now!</h2>
+                    <h5 class="bottom-subttile">“Decentralized NFT smart ticketing app for seamless Primary & Secondary
+                        sales, transfers, entry &  rewarding your community. 100% secure & private. Available to use
+                        soon!”</h5>
+                    <a class="launch-app-link-bottom" href="">Launch App</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" data-aos="fade-down">
+            <div class="footer-center">
+                <a href="index.html">
+                    <img class="footer-logo" src="images/site-logo.svg" alt="">
+                </a>
+                <div class="ul-div">
+                    <p class="menu-intro">Some title about</p>
+                    <ul class="footer-list-cont">
+                        <li class="footer-list">
+                            <a class="footer-link" href="">About Company</a>
+                        </li>
+                        <li class="footer-list">
+                            <a class="footer-link" href="">Work with Us</a>
+                        </li>
+                        <li class="footer-list">
+                            <a class="footer-link" href="">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ul-div">
+                    <p class="menu-intro">Some title about</p>
+                    <ul class="footer-list-cont">
+                        <li class="footer-list">
+                            <a class="footer-link" href="">About Company</a>
+                        </li>
+                        <li class="footer-list">
+                            <a class="footer-link" href="">Work with Us</a>
+                        </li>
+                        <li class="footer-list">
+                            <a class="footer-link" href="">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-form-cont">
+                    <p class="form-intro">Join us or be a partner</p>
+                    <form class="form" action="">
+                        <div class="input-style">
+                            <input class="input-emal" type="email" name="" id="" placeholder="Your Email">
+                        </div>
+                        <button class="form-btn">Send</button>
+                    </form>
+                    <p class="form-description">By sending email you accept the Terms of Service and Privacy Policy
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom-cont">
+                <div class="footer-bottom-center">
+                    <p class="site-info">2023 Copyrights. Event.ly</p>
+                    <div class="links-div">
+                        <ul class="privacy-terms-cookie">
+                            <li class="this-list">
+                                <a class="this-link" href="">Terms of usage</a>
+                            </li>
+                            <li class="this-list">
+                                <a class="this-link" href="">Cookie Policy</a>
+                            </li>
+                            <li class="this-list">
+                                <a class="this-link" href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        <ul class="web-links">
+                            <li class="web-list">
+                                <a class="web-link" href="">
+                                    <img class="web-icon" src="images/simple-icons_x.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="web-list">
+                                <a class="web-link" href="">
+                                    <img class="web-icon" src="images/paper-airplane 1.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="swiper-slide.js"></script>
+    <script src="data-aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
